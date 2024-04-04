@@ -42,14 +42,20 @@ class CategoryCard extends StatelessWidget {
             ),
             Text(
               title,
-              style: const TextStyle(
-                  color: Colors.black, fontWeight: FontWeight.w700),
+              style:  TextStyle(
+                fontFamily: "Montserrat",
+                  color: Colors.black,
+                  letterSpacing: 1.1,
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.w700),
             ),
             subtitle != null
                 ? Text(
                     subtitle!,
-                    style: const TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.w400),
+                    style:  TextStyle(
+                        fontFamily: "Montserrat",
+                        fontSize: 24.sp,
+                        color: primaryColor, fontWeight: FontWeight.w300),
                   )
                 : const SizedBox.shrink()
           ],
